@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg5554"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000"
+   sodipodi:docname="YouTube Music Icon.svg">
+  <metadata
+     id="metadata5560">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5558" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview5556"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.27764706"
+     inkscape:cx="7.1420483"
+     inkscape:cy="328.87976"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5554" />
+  <ellipse
+     style="fill:#333333;fill-opacity:1;stroke:none"
+     id="path5564"
+     cx="500.00534"
+     cy="500"
+     rx="499.99466"
+     ry="500" />
+  <path
+     style="fill:#3d3d3d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 89.289503,215.1091 a 499.99466,500 0 0 0 -1.941069,2.56994 499.99466,500 0 0 0 -26.122675,42.6043 499.99466,500 0 0 0 -21.74941,45.00918 499.99466,500 0 0 0 -17.142277,46.94253 499.99466,500 0 0 0 -12.34806,48.4279 A 499.99466,500 0 0 0 2.502349,450.08111 499.99466,500 0 0 0 0,499.9944 a 499.99466,500 0 0 0 1.262867,35.36603 499.99466,500 0 0 0 6.033711,49.63035 499.99466,500 0 0 0 10.944856,48.758 499.99466,500 0 0 0 15.739096,47.43765 499.99466,500 0 0 0 20.416386,45.6222 499.99466,500 0 0 0 24.883193,43.3352 499.99466,500 0 0 0 14.616544,20.46516 L 425.2828,611.42102 l 0,-198.37995 L 89.289503,215.1091 Z"
+     id="path5570"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:#e23229;fill-opacity:1;stroke:none;stroke-width:0.46781889"
+     d="M 325.1186,665.57822 A 230.94654,236.90782 0 0 0 497.31311,745.05752 230.94654,236.90782 0 0 0 728.25442,508.15216 230.94654,236.90782 0 0 0 497.31311,271.24681 230.94654,236.90782 0 0 0 323.10736,352.84807 l 102.17544,60.193 0,198.37995 -100.1642,54.1572 z"
+     id="path5575"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:#c7322a;fill-opacity:1;stroke:none;stroke-width:0.46781889"
+     d="m 325.1186,665.57822 100.1642,-54.1572 0,-198.37995 -102.17544,-60.193 a 230.94654,236.90782 0 0 0 -56.73556,155.30409 230.94654,236.90782 0 0 0 58.7468,157.42606 z"
+     id="ellipse5566"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 425.28431,611.41301 0,-198.36954 189.27504,97.82608 z"
+     id="path5568"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccc" />
+</svg>

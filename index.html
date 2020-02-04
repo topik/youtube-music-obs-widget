@@ -1,0 +1,43 @@
+<!--
+Created by Topik @ https://topik.dev
+available options: right disable-progressbar disable-albumimage transparent-background circle-progressbar
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Widget</title>
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/viewer.css">
+	<script type="text/javascript" src="class/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="class/circle-progress.min.js"></script>
+	<script type="text/javascript" src="viewer.js"></script>
+</head>
+<body class="isOffline">
+<div class="artist-background"></div>
+<div class="color-background"></div>
+<main>
+	<div class="online">
+		<div class="song-info">
+			<div class="song-info__album-art"></div>
+			<div class="song-info__text_info">
+				<div class="song-info__artist">
+					<div class="song-info__artist-subtitle">Artist</div>
+					<div class="song-info__artist-name" title="Artist"></div>
+				</div>
+				<div class="song-info__title" title="Title"></div>
+			</div>
+			<div class="song-info__time">
+				<div class="song-info__time-container">
+					<div class="song-info__time-current"></div>
+					<div class="song-info__time-separator">/</div>
+					<div class="song-info__time-max"></div>
+				</div>
+				<progress class="progressbar"></progress>
+			</div>
+		</div>
+	</div>
+</main>
+</body>
+</html>
