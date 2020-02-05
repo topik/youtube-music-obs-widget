@@ -9,10 +9,36 @@ class GDMPConnector {
 	}
 
 	constructor(player) {
-		var that = this;
 		this.player = player;
-		this.#socket = new WebSocket("ws://localhost:5672", "protocolOne");
+		this.connect();
 		this.#_settings = new GDMPSettings();
+	}
+
+	connect() {
+		let that = this;
+		this.#socket = new WebSocket("ws://localhost:5672", "protocolOne");
+		this.#socket.onerror = function () {
+			console.warn("Error during connecting");
+			that.handleDisconnect();
+		};
+		this.#socket.onopen = function () {
+			that.socketMessages();
+		};
+	}
+
+	handleDisconnect() {
+		let that = this;
+		setTimeout(function () {
+			that.connect();
+		}, 5000);
+	}
+
+	socketMessages() {
+		let that = this;
+		this.#socket.onclose = function () {
+			console.warn("Connection was closed");
+			that.handleDisconnect();
+		};
 		this.#socket.onmessage = function (event) {
 			let data = JSON.parse(event.data);
 			that.settings.lastUpdate = new Date();
