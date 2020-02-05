@@ -35,5 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(window).resize(function () {
-	$('.song-info__album-art-image').circleProgress({size: $(".song-info__album-art-image").width() + 1});
+	if ($("body").hasClass("circle-progressbar")) {
+		$('.song-info__album-art-image').circleProgress({size: $(".song-info__album-art-image").width() + 1});
+	}
 });
