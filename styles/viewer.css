@@ -49,6 +49,11 @@
 		font-size: 35vh;
 		display: inline;
 	}
+
+	body .artist-background {
+		margin-top: -12vh;
+		height: 130vh;
+	}
 }
 
 html, body {
@@ -110,10 +115,11 @@ body.disable-albumimage .song-info__text_info {
 }
 
 .artist-background {
-	margin-top: -0.3em;
+	margin-top: -3vh;
+	margin-left: -3vw;
 	background-color: transparent;
-	width: 103%;
-	height: 103%;
+	width: 105vw;
+	height: 106%;
 	position: fixed;
 	z-index: -2;
 	background-size: cover;
