@@ -14,6 +14,33 @@
 	font-style: normal;
 }
 
+@media screen and (min-aspect-ratio: 64/19) {
+	body .song-info__album-art {
+		max-height: 80vh;
+		max-width: 80vh;
+		box-shadow: 0 0 0 8vh rgba(0, 0, 0, 0.2);
+		margin: 9vh;
+	}
+
+	.song-info__album-art .song-info__album-art-image {
+		width: 20vmax;
+		height: 20vmax;
+		max-height: 80vh;
+		max-width: 80vh;
+	}
+
+	body .song-info__text_info {
+		width: calc(80% - 20vmin);
+		margin: 9vh;
+		width: calc(100% - 120vh);
+	}
+
+	body {
+		font-size: 13vh !important; /* ehm */
+	}
+}
+
+
 @media screen and (max-width: 600px) {
 	.online .song-info .song-info__artist .song-info__artist-subtitle {
 		display: none;
@@ -37,7 +64,7 @@
 	}
 
 	body .song-info__text_info .song-info__artist-name {
-		font-size: 40vh;
+		font-size: 2em;
 	}
 
 	body .song-info__text_info .song-info__artist,
@@ -46,8 +73,12 @@
 	}
 
 	body .song-info__text_info .song-info__title {
-		font-size: 35vh;
+		font-size: 2em;
 		display: inline;
+	}
+
+	body .song-info__text_info .song-info__title:before {
+		content: " - ";
 	}
 
 	body .artist-background {
@@ -84,6 +115,10 @@ body.transparent-background .artist-background {
 	display: none;
 }
 
+body.disable-time .song-info__time-container {
+	display: none;
+}
+
 body.right .song-info__album-art {
 	float: right;
 }
@@ -94,7 +129,8 @@ body.right .song-info__text_info {
 
 body.right .song-info__time .song-info__time-container {
 	float: left;
-	margin-left: 2em;
+	margin-bottom: 3vh;
+	margin-left: 1em;
 }
 
 body.disable-progressbar .song-info__time, body.circle-progressbar .song-info__time {
@@ -130,9 +166,9 @@ body.disable-albumimage .song-info__text_info {
 
 .song-info__time-container {
 	float: right;
-	font-size: 0.5em;
-	margin-bottom: 1em;
-	margin-right: 0.5em;
+	font-size: 0.9em;
+	margin-bottom: 3vh;
+	margin-right: 1vw;
 }
 
 .color-background {
@@ -164,11 +200,15 @@ body.disable-albumimage .song-info__text_info {
 
 .song-info__artist-name {
 	font-weight: 500;
+	font-size: 1.5em;
 }
 
 .song-info__title {
-	margin-top: 0.8em;
-	font-size: 2.5vw;
+	margin-top: 0.2em;
+	font-size: 1em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .song-info__time-current, .song-info__time-max, .song-info__time-separator {

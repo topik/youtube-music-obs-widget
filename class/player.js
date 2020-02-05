@@ -62,7 +62,6 @@ class Player {
 				el.find(".song-info__artist-name").text(playerInfo.track.artist);
 			}
 			if (playerInfo.track.hasOwnProperty("albumArt")) {
-
 				el.find(".song-info__album-art").empty();
 				el.find(".song-info__album-art").append($('<div class="song-info__album-art-image" style="background-image:url(\'' + this.getAlbumArt(playerInfo.track.albumArt, 420, 420) + '\')"></div>'));
 				$(".artist-background").css("background-image", "url('" + this.getAlbumArt(playerInfo.track.albumArt, 420, 420) + "')");

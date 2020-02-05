@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 	if (window.location.search.length > 0) {
 		let urlParams = new URLSearchParams(window.location.search);
-		if (urlParams.get('features') !== null) {
+		if (urlParams.get('features') !== null && urlParams.get('features') !== "") {
 			urlParams.get('features').split(" ").forEach(function (value) {
 				document.getElementsByTagName("body")[0].classList.add(value);
 			});
