@@ -5,7 +5,6 @@
 	<title>Google Youtube Music Widget</title>
 	<meta name="viewport"
 		  content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="styles/viewer.css">
 	<script type="text/javascript" src="class/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="class/circle-progress.min.js"></script>
 	<script type="text/javascript" src="viewer.js"></script>
@@ -13,9 +12,21 @@
 <!--
 Created by Topik @ https://topik.dev
 https://github.com/topik/google-youtube-music-obs-widget
-available options: right disable-progressbar disable-albumimage transparent-background circle-progressbar disable-time
+available options: circle-progressbar
 -->
 <body class="isOffline">
+<style>
+	html, body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		overflow: hidden;
+		background-color: transparent;
+	}
+	body.isOffline {
+		visibility: hidden;
+	}
+</style>
 <div class="artist-background"></div>
 <div class="color-background"></div>
 <main>
