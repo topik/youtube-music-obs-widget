@@ -9,6 +9,8 @@ This widget is using Google Play Music Desktop Player websocket connection for d
 - Responsive
 - Doesn't need server to run, everything is HTML and Javascript
 - Possible to hide/change some elements, for example progress-bar, disable background, disable album image, position album image to right, circle progressbar
+- [Text-only version](#Text-only-version)
+- [no-CSS version](#no-CSS-version)
 
 ## Requirements:
 - Google Play Music Desktop Player (https://www.googleplaymusicdesktopplayer.com/)
@@ -78,6 +80,16 @@ Height: 150
 ![image](https://user-images.githubusercontent.com/3578443/73893833-075e0180-487b-11ea-93f5-b8b086be7d0d.png)
 
 You can basically set any width and height. You can also open the page (https://topik.github.io/google-youtube-music-obs-widget/index.html) in your browser to test the size of the widget.
+
+## Text-only version
+Widget will show only interpret name and song name.  
+URL:https://topik.github.io/google-youtube-music-obs-widget/textonly.html
+
+## No-CSS version
+Basic widget without no additional CSS. You can customize CSS via OBS or by downloading this project.
+URL:https://topik.github.io/google-youtube-music-obs-widget/nocss.html
+
+
 
 ## Contributing
 If you find some bug or if you write new feature, just fork this repo and make a pull request.
