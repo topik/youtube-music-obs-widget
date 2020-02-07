@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'YouTube Sans';
+	src: url('../assets/YouTube-Sans-Light.woff2') format('woff2'),
+	url('../assets/YouTube-Sans-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'YouTube Sans';
+	src: url('../assets/YouTube-Sans-Medium.woff2') format('woff2'),
+	url('../assets/YouTube-Sans-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+	background-color: transparent;
+	font-weight: 300;
+	font-family: 'YouTube Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body.isOffline {
+	visibility: hidden;
+}
+
+.song-info__text_info div {
+	display: inline-block;
+}
+
+.song-info__text_info .song-info__title:before {
+	content: " - ";
+}
