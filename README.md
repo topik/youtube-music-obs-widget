@@ -3,6 +3,9 @@ Google Music / Youtube Music OBS (Streamlabs OBS) widget
 
 This widget is using Google Play Music Desktop Player websocket connection for displaying informations about song that is being played. 
 
+## Update 25.9.2021
+Widget is no longer working with current version of GPMDP based on Youtube Music.
+
 ## Features
 - Your viewers can see what are you listening to
 - Easy setup
