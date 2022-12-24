@@ -1,4 +1,4 @@
-# Google Youtube Music OBS Widget
+# Youtube Music OBS Widget
 Youtube Music OBS (Streamlabs OBS) widget (formerly Google Youtube Music OBS Widget)
 
 This widget is using Youtube Music Desktop Player API  for displaying informations about song that is being played.
