@@ -57,6 +57,9 @@ class Player {
 		if (this.lastTrackTime === null) {
 			return;
 		}
+		if(typeof setTime === "undefined") {
+			return;
+		}
 		if (newTimeSet === false) {
 			this.lastTrackTime.setSeconds(this.lastTrackTime.getSeconds() + 1);
 		}
