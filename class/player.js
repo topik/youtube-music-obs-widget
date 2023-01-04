@@ -57,7 +57,7 @@ class Player {
 		if (this.lastTrackTime === null) {
 			return;
 		}
-		if(typeof setTime === "undefined") {
+		if (typeof setTime === "undefined") {
 			return;
 		}
 		if (newTimeSet === false) {
@@ -72,8 +72,7 @@ class Player {
 			length = 8;
 		}
 		let dateTotal = new Date(total);
-		if(this.lastTrackTime > dateTotal)
-		{
+		if (this.lastTrackTime > dateTotal) {
 			return;
 		}
 		el.find(".song-info__time-current").text(this.lastTrackTime.toISOString().substr(from, length));
