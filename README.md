@@ -39,6 +39,10 @@ You can use multiple parameters (separated by `+` sign) for disabling/enabling s
 | `transparent-background` | Disable background, set background as transparent                 | `index.html?features=transparent-background` |
 | `circle-progressbar`     | Disable progressbar, use circle around album image as progressbar | `index.html?features=circle-progressbar`     |
 | `disable-time`     | Disable timer above progressbar | `index.html?features=disable-time`     |
+| `album-spin`       | Spin the album image while playing | `index.html?features=album-spin`    |
+| `not-hide-on-pause`      | Still display the song info while pausing                          | `index.html?features=not-hide-on-pause` |
+| `blink-pause`      | Show a pause icon over the album image. Note that `not-hide-on-pause` is required for this feature.    | `index.html?features=blink-pause` |
+
 
 You can combine multiple parameters together, for example for transparent background and circle progress bar, you will use: `index.html?features=transparent-background+circle-progressbar`
 
