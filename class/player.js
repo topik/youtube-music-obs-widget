@@ -15,6 +15,7 @@ class Player {
 		if (playerInfo.playState === true) {
 			this.isPlaying = true;
 			$("body").removeClass("isOffline");
+			$("body").removeClass("paused");
 			if (this.lastUpdateData.hasOwnProperty("track") && JSON.stringify(this.lastUpdateData.track) === JSON.stringify(playerInfo.track)) {
 				this.updateTrackTime(playerInfo);
 			} else {
@@ -36,6 +37,7 @@ class Player {
 		} else {
 			this.isPlaying = false;
 			$("body").addClass("isOffline");
+			$("body").addClass("paused");
 		}
 		this.lastUpdateData = playerInfo;
 	}
