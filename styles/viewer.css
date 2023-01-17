@@ -175,7 +175,20 @@ body.album-spin .song-info__album-art-image {
 	animation-play-state: running;
 }
 
+body.album-spin .song-info__album-art-image > *{
+	animation-name: spin;
+	animation-duration: 60000ms;
+	animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+	animation-play-state: running;
+	animation-direction: reverse;
+}
+
 body.album-spin.paused .song-info__album-art-image {
+	animation-play-state: paused;
+}
+
+body.album-spin.paused .song-info__album-art-image > * {
 	animation-play-state: paused;
 }
 
