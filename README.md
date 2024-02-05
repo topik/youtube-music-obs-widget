@@ -51,44 +51,44 @@ You can combine multiple parameters together, for example for transparent backgr
 
 ## Examples
 ### Basic setup
-URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html
-Width: 400
-Height: 120
+URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html  
+Width: 400  
+Height: 120  
 ![image](https://user-images.githubusercontent.com/3578443/73892612-aed93500-4877-11ea-815b-4cb4aa186321.png)
 
 ### Disabled timer and progressbar
-URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html?features=disable-time+disable-progressbar
-Width: 400
-Height: 120
+URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html?features=disable-time+disable-progressbar  
+Width: 400  
+Height: 120  
 ![image](https://user-images.githubusercontent.com/3578443/73892932-7a19ad80-4878-11ea-888f-0ae8f02e2380.png)
 
 ### Enable circle progressbar (around album image)
-URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html?features=circle-progressbar
-Width: 400
-Height: 120
+URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html?features=circle-progressbar  
+Width: 400  
+Height: 120  
 ![image](https://user-images.githubusercontent.com/3578443/73893118-1348c400-4879-11ea-8d4e-bfedd4fee950.png)
 
 ### Shift position of album image
-URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html?features=right
-Width: 400
-Height: 120
+URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html?features=right  
+Width: 400  
+Height: 120  
 ![image](https://user-images.githubusercontent.com/3578443/73893232-5a36b980-4879-11ea-9763-741d23df5772.png)
 
 ### Disable background image (set background as transparent) and enable circle progressbar
-URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html?features=transparent-background+circle-progressbar
-Width: 400
-Height: 120
+URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html?features=transparent-background+circle-progressbar  
+Width: 400  
+Height: 120  
 ![image](https://user-images.githubusercontent.com/3578443/73893495-2314d800-487a-11ea-8d3b-9fddbdf0ec1a.png)
 
 ### Disable background, text only version
-URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html?features=transparent-background
-Width: 400
-Height: 100 (everything under 101px is text only version)
+URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html?features=transparent-background  
+Width: 400  
+Height: 100 (everything under 101px is text only version)  
 ![image](https://user-images.githubusercontent.com/3578443/73893693-a7675b00-487a-11ea-9795-f31b6a6f19ed.png)
 
 ### Fullscreen width footer
-URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html
-Width: 1920
+URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html  
+Width: 1920  
 Height: 150  
 ![image](https://user-images.githubusercontent.com/3578443/73893833-075e0180-487b-11ea-93f5-b8b086be7d0d.png)
 
