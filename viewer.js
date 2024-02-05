@@ -11,10 +11,10 @@ let readyCheck = setInterval(function () {
 }, 500);
 document.addEventListener("DOMContentLoaded", function () {
 	let require = [
-		"class/moment.min.js",
-		"class/player.js",
-		"class/connector.js",
-		"class/GDMPSettings.js"
+		"class/moment.min.js?v=2",
+		"class/player.js?v=2",
+		"class/connector.js?v=2",
+		"class/GDMPSettings.js?v=2"
 	];
 	for (i in require) {
 		var s = document.createElement('script');
