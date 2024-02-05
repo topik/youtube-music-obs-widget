@@ -5,10 +5,6 @@ class Player {
 	constructor() {
 		this.lastUpdateData = {};
 		this.isPlaying = false;
-		let that = this;
-		this.trackTimeInterval = setInterval(function () {
-			that.periodicallyUpdateTrackTime();
-		}, 1000);
 	}
 
 	updateSongInfo(playerInfo) {
@@ -44,26 +40,17 @@ class Player {
 
 	periodicallyUpdateTrackTime(setTime) {
 		let newTimeSet = false;
-		if (typeof setTime !== "undefined") {
-			if (this.lastTrackTime === null) {
+		if (this.lastTrackTime === null) {
+			this.lastTrackTime = new Date(setTime);
+		} else {
+			let newTime = new Date(setTime);
+			if (Math.abs(this.lastTrackTime - newTime) > 100) {
 				this.lastTrackTime = new Date(setTime);
-				newTimeSet = true;
-			} else {
-				let newTime = new Date(setTime);
-				if (Math.abs(this.lastTrackTime - newTime) > 2000) {
-					this.lastTrackTime = new Date(setTime);
-					newTimeSet = true;
-				}
 			}
 		}
+
 		if (this.lastTrackTime === null) {
 			return;
-		}
-		if (typeof setTime === "undefined") {
-			return;
-		}
-		if (newTimeSet === false) {
-			this.lastTrackTime.setSeconds(this.lastTrackTime.getSeconds() + 1);
 		}
 		let el = $(".online .song-info__time");
 		let total = parseInt(el.find("progress").attr("max"));
@@ -100,14 +87,15 @@ class Player {
 			if (playerInfo.track.hasOwnProperty("author")) {
 				el.find(".song-info__artist-name").text(playerInfo.track.author);
 			}
-			if (playerInfo.track.hasOwnProperty("cover")) {
+			if (playerInfo.track.hasOwnProperty("thumbnails") && playerInfo.track.thumbnails.length > 0) {
 				el.find(".song-info__album-art").empty();
-				el.find(".song-info__album-art").append($('<div class="song-info__album-art-image" style="background-image:url(\'' + this.getAlbumArt(playerInfo.track.cover, 420, 420) + '\')"></div>'));
-				$(".artist-background").css("background-image", "url('" + this.getAlbumArt(playerInfo.track.cover, 420, 420) + "')");
+				el.find(".song-info__album-art").append($('<div class="song-info__album-art-image" style="background-image:url(\'' + this.getAlbumArt(playerInfo.track.thumbnails[0].url, 420, 420) + '\')"></div>'));
+				$(".artist-background").css("background-image", "url('" + this.getAlbumArt(playerInfo.track.thumbnails[0].url, 420, 420) + "')");
 				if ($("body").hasClass("circle-progressbar")) {
 					$('.song-info__album-art-image').circleProgress({
 						value: 0,
 						startAngle: -Math.PI / 2,
+						animation: { duration: 100, easing: "circleProgressEasing" },
 						size: $(".song-info__album-art-image").width(),
 						fill: {
 							color: 'rgba(255,255,255, .4)'
