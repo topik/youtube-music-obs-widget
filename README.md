@@ -89,7 +89,7 @@ Height: 100 (everything under 101px is text only version)
 ### Fullscreen width footer
 URL of the widget: https://topik.github.io/youtube-music-obs-widget/index.html
 Width: 1920
-Height: 150
+Height: 150  
 ![image](https://user-images.githubusercontent.com/3578443/73893833-075e0180-487b-11ea-93f5-b8b086be7d0d.png)
 
 You can basically set any width and height. You can also open the page (https://topik.github.io/youtube-music-obs-widget/index.html) in your browser to test the size of the widget.
