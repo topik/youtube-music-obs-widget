@@ -48,7 +48,7 @@ class Connector {
 			url: YTMDesktopUrl + "/api/v1/auth/requestcode",
 			type: "POST",
 			data: JSON.stringify({
-				"appId": "42069",
+				"appId": "topik-obs-widget",
 				"appName": "Youtube Music OBS Widget (by Topik)",
 				"appVersion": "2.0.0"
 			}),
