@@ -53,6 +53,9 @@ class Player {
 			return;
 		}
 		let el = $(".online .song-info__time");
+		if(el.length === 0) {
+			return;
+		}
 		let total = parseInt(el.find("progress").attr("max"));
 		let from = 14;
 		let length = 5;
