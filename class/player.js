@@ -12,29 +12,30 @@ class Player {
 			this.isPlaying = true;
 			$("body").removeClass("isOffline");
 			$("body").removeClass("paused");
-			if (this.lastUpdateData.hasOwnProperty("track") && JSON.stringify(this.lastUpdateData.track) === JSON.stringify(playerInfo.track)) {
-				this.updateTrackTime(playerInfo);
-			} else {
-				if (playerInfo.hasOwnProperty("track") === false) {
-					return;
-				}
-				if (playerInfo.track.hasOwnProperty("cover")) {
-					let img = new Image();
-					let that = this;
-					img.onload = function () {
-						that.updateTrackInfo(playerInfo);
-					};
-					img.src = this.getAlbumArt(playerInfo.track.cover, 420, 420);
-				} else {
-					this.updateTrackInfo(playerInfo);
-				}
-
-			}
 		} else {
 			this.isPlaying = false;
 			$("body").addClass("isOffline");
 			$("body").addClass("paused");
 		}
+
+		if (this.lastUpdateData.hasOwnProperty("track") && JSON.stringify(this.lastUpdateData.track) === JSON.stringify(playerInfo.track)) {
+			this.updateTrackTime(playerInfo);
+		} else {
+			if (playerInfo.hasOwnProperty("track") === false) {
+				return;
+			}
+			if (playerInfo.track.hasOwnProperty("cover")) {
+				let img = new Image();
+				let that = this;
+				img.onload = function () {
+					that.updateTrackInfo(playerInfo);
+				};
+				img.src = this.getAlbumArt(playerInfo.track.cover, 420, 420);
+			} else {
+				this.updateTrackInfo(playerInfo);
+			}
+		}
+
 		this.lastUpdateData = playerInfo;
 	}
 
